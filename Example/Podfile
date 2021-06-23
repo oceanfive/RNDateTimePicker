@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RNDateTimePicker_Tests' do
+  pod 'RNDateTimePicker', :path => '../'
+  
+  
+end
