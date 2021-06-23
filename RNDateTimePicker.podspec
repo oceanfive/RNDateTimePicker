@@ -1,42 +1,18 @@
-#
-# Be sure to run `pod lib lint RNDateTimePicker.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+
+version = '3.5.2'
+source = { :git => 'https://github.com/react-native-community/datetimepicker', :tag => "v#{version}"}
 
 Pod::Spec.new do |s|
-  s.name             = 'RNDateTimePicker'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of RNDateTimePicker.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/oceanfive/RNDateTimePicker'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'oceanfive' => '849638313@qq.com' }
-  s.source           = { :git => 'https://github.com/oceanfive/RNDateTimePicker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '9.0'
-
-  s.source_files = 'RNDateTimePicker/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'RNDateTimePicker' => ['RNDateTimePicker/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.name         = "RNDateTimePicker"
+  s.version      = version
+  s.summary      = "DateTimePicker component for React Native"
+  s.description  = "DateTimePicker component for React Native"
+  s.license      = { :type => 'MIT' }
+  s.author       = "Martijn Swaagman <mswaagman@godaddy.com> (https://github.com/swaagie)"
+  s.homepage     = "https://github.com/react-native-community/datetimepicker#readme"
+  s.platform     = :ios, "10.0"
+  s.source       = source
+  s.requires_arc = true
+  s.static_framework = true
+  s.dependency "React-Core"
 end
